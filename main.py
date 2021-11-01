@@ -16,16 +16,16 @@ def help(update, context):
     /contact -> Information about contac
     """,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(text="Discord", url="https://discord.gg/WAfwFTkZsK")],
-            [InlineKeyboardButton(text="Support XeonTera", url="https://saweria.co/X3Zero")],
+            [InlineKeyboardButton(text="Discord", url="https://example.com")],
+            [InlineKeyboardButton(text="Support XeonTera", url="https://example.com")],
         ])
     )
 
 def contact(update, context):
     update.message.reply_text("You can contact Akio in Discord or Instagram!",
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(text="Discord", url="https://discord.gg/WAfwFTkZsK")],
-            [InlineKeyboardButton(text="Instagram", url="https://instagram.com/mongamen")],
+            [InlineKeyboardButton(text="Discord", url="https://example.com")],
+            [InlineKeyboardButton(text="Instagram", url="https://example.com")],
         ])
     )
 
@@ -38,3 +38,7 @@ disp.add_handler(telegram.ext.CommandHandler("contact", contact))
 
 updater.start_polling()
 updater.idle()
+
+#=================#
+## Coded by Akio ##
+#=================#
